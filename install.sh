@@ -1,4 +1,4 @@
-set -ex
+set -e
 
 # Set up environment variables.
 ## Remote addr
