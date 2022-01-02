@@ -13,4 +13,4 @@ Restart=always
 WantedBy=default.target
 EOM
 
-echo $SYSTEMD_CONFIG | sudo tee -a /etc/systemd/system/remote_node_connect.service
+echo $SYSTEMD_CONFIG | sudo tee /etc/systemd/system/remote_node_connect.service
