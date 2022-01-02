@@ -14,6 +14,8 @@ if [ -z $REMOTE_PORT ]; then
 fi
 export REMOTE_PORT
 
+set -ex
+
 # Run all scripts
 for script in $(ls scripts/ | sort); do
     ./scripts/$script
