@@ -6,7 +6,7 @@ Description=Reverse SSH connection
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/ssh -R 12345:localhost:22 -p $REMOTE_PORT -nfN $REMOTE_ADDR
+ExecStart=/usr/bin/ssh -R 12345:localhost:22 -p $REMOTE_PORT -N $REMOTE_ADDR
 Restart=always
 User=$(whoami)
 
